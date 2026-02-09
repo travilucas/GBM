@@ -20,10 +20,10 @@ GBM-TME-Analysis/
 ├── README.md                 # Project Overview & Instructions
 ├── LICENSE                   # MIT License
 └── Code_summary/                  # Analysis Source Code
-    ├── Step1_Single-cell RNA-seq Analysis Pipeline.R      # QC, Clustering, Annotation, InferCNV
-    ├── Step2_Bulk RNA-seq Analysis Pipeline.R       # Batch Correction, Consensus Clustering
+    ├── Step1_Single-cell RNA-seq Analysis Pipeline.R      # QC, Clustering, Annotation, InferCNV, Hallmarks of scRNA-seq
+    ├── Step2_Bulk RNA-seq Analysis Pipeline.R       # Batch Correction, Consensus Clustering, Hallmarks of bulk RNA-seq
     ├── Step3_Model Construction and Validation.R    # ML Model (StepCox+RSF), SHAP, HMsig (7 genes)
-    ├── Step4_Cell-Cell Commnication Analysis.R            # L-R Interactions (OPHN1 validation)
-    ├── Step5_Trajectory Analysis.R          # Monocle3 (T-cell ICG dynamics)
-    ├── Step6_Regulon Analysis.R              # Regulon Activity & Risk Correlation
-    └── Step7_Spatial Transcriptomics Analysis.R             # Spatial Deconvolution (CARD)
+    ├── Step4_Cell-Cell Commnication Analysis.R            # L-R Interactions
+    ├── Step5_Trajectory Analysis.R          # Monocle3 (T-cell trajectory)
+    ├── Step6_Regulon Analysis.R              # Regulon Activity & Clinical Outcome
+    └── Step7_Spatial Transcriptomics Analysis.R             # Spatial Deconvolution (CARD) for Validation
