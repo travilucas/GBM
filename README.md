@@ -20,21 +20,19 @@ GBM/
 ├── README.md                 # Project Overview & Instructions
 ├── LICENSE                   # MIT License
 ├── Code_summary/             # Analysis Source Code
-│   ├── Step1_Single-cell RNA-seq Analysis Pipeline.R      # QC, Clustering, Annotation, InferCNV, Hallmarks of scRNA-seq
-│   ├── Step2_Bulk RNA-seq Analysis Pipeline.R             # Batch Correction, Consensus Clustering, Hallmarks of bulk RNA-seq
+│   ├── Step1_Single-cell RNA-seq Analysis Pipeline.R      # QC, Clustering, Annotation, InferCNV, Hallmarks
+│   ├── Step2_Bulk RNA-seq Analysis Pipeline.R             # Batch Correction, Consensus Clustering, Hallmarks
 │   ├── Step3_Model Construction and Validation.R          # ML Model (StepCox+RSF), SHAP, HMsig (7 genes)
-│   ├── Step4_Cell-Cell Commnication Analysis.R             # L-R Interactions
+│   ├── Step4_Cell-Cell Communication Analysis.R           # L-R Interactions & PPI Network
 │   ├── Step5_Trajectory Analysis.R                        # Monocle3 (T-cell trajectory)
 │   ├── Step6_Regulon Analysis.R                           # Regulon Activity & Clinical Outcome
-│   └── Step7_Spatial Transcriptomics Analysis.R           # Spatial Deconvolution (CARD) for Validation
+│   └── Step7_Spatial Transcriptomics Analysis.R           # Spatial Deconvolution (CARD)
 └── Data/                     # Key Processed Data for Figures
-
-Figure,Processed Data File(s),Description
-Figure 1,"Data/Figure 1/sce_data.txt, scRNA_Tumor_hallmark.Rdata","scRNA-seq clustering, markers, and enrichment results."
-Figure 2,"Data/Figure 2/consensus.Rdata, bulk_tumor_hallmark.Rdata",Consensus clustering (Cold/Hot) and bulk GSEA results.
-Figure 3,Data/Figure 3/res.feature.all_result.Rdata,ML model features and HMsig risk scores.
-Figure 4,"Data/Figure 4/Risk gene-LR.xlsx, string_interactions_short.tsv",LR communication probabilities and PPI network data.
-Figure 5,"Data/Figure 5/pseudotime.txt, module_gene.txt",T-cell trajectory coordinates and pseudotime gene modules.
-Figure 6,"Data/Figure 6/Step2_regulonTargetsInfo.tsv, 4Cell_InfoMatrix.Rdata",SCENIC regulon activity and TF-target interaction info.
-Figure 7,Data/Figure 7/GBM5_CARD_celltype_prop.txt,Spatial deconvolution results (CARD proportions).
-Supp. Figs,Data/Supplementary Figure 1-5/,"Validation data for sub-clusters, ML benchmarking, and spatial mapping."
+    ├── Figure 1/             # Data for scRNA-seq clustering and hallmark enrichment
+    ├── Figure 2/             # Data for Bulk consensus clustering and Hot/Cold TME
+    ├── Figure 3/             # Data for ML model training, feature selection and HMsig scores
+    ├── Figure 4/             # Data for Cell-cell communication and HMsig-LR network
+    ├── Figure 5/             # Data for T-cell pseudotime trajectory and gene modules
+    ├── Figure 6/             # Data for SCENIC regulon activity and TF-target interaction
+    ├── Figure 7/             # Data for Spatial deconvolution results (eg. GBM5_CARD_celltype_prop.txt)
+    └── Supplementary Figure 1-5/ # Validation data for cell subtype markers, ML benchmarking, and spatial mapping
